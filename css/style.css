@@ -1,0 +1,213 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 100px;
+}
+
+.logo h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: -150px;
+
+}
+
+.nav-links a {
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fa-magnifying-glass {
+    margin-right: 25px;
+
+}
+
+
+/*--------- main part css----- */
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.top-banner {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    width: 80%;
+    height: 70vh;
+}
+
+
+.banner-details {
+    width: 50%;
+    padding: 10px;
+}
+
+.banner-details h1 {
+    font-size: 50px;
+    color: black;
+}
+
+.banner-details p {
+    font-size: 20px;
+    color: grey;
+    margin-bottom: 40px;
+}
+
+.banner-details a {
+    text-decoration: none;
+    background-color: rgb(145, 25, 105);
+    padding: 15px 20px;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+
+}
+
+
+.banner-image {
+    width: 50%;
+
+
+}
+
+.banner-image img {
+    width: 80%;
+    margin-left: 50px;
+    margin-right: 0;
+}
+
+
+
+/*----- sponsored part------ */
+.container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.sponsored {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 50px;
+    align-items: center;
+}
+
+.sponsored img {
+    width: 70px;
+}
+
+
+
+/*--------- pupolar part css------ */
+
+
+.pupolar-title h1 {
+    text-align: center;
+    color: rgb(212, 105, 105);
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 15px 40px grey;
+}
+
+
+.card h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(173, 106, 106);
+    margin-bottom: -10px;
+}
+
+.card h3 {
+    font-size: 25px;
+    color: rgb(179, 147, 147);
+    margin-bottom: 10px;
+}
+
+.card .fa-star,
+.fa-star-half-stroke {
+    color: gold;
+    font-size: 12px;
+}
+
+.card p {
+    font-size: 20px;
+    color: rgb(184, 139, 139);
+}
+
+
+
+
+
+
+@media only screen and (max-width:576px) {
+
+    .top-banner {
+        flex-direction: column-reverse;
+
+    }
+
+    .sponsored,
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+
+
+    }
+
+    .sponsored img {
+        width: 60%;
+
+
+    }
+
+    .banner-details {
+        width: 100%;
+    }
+
+    .banner-image {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+}
+
+
+
+@media only screen and (min-width:577px) and (max-width:800px) {
+
+    .cards,
+    .sponsored {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
+
+@media only screen and (min-width:801px) and (max-width:1100px) {
+
+    .cards,
+    .sponsored {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
